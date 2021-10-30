@@ -1,33 +1,35 @@
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure,figure img,figcaption{margin:0;padding:0;border:0;}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block;}a img{border:0;}figure{position:relative;}
-
-* { box-sizing: border-box; }
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("/assets/fonts/UntitledSans-Regular.woff2") format("woff2"),
+    url("/assets/fonts/UntitledSans-Regular.woff") format("woff");
+}
 
 /* Elementary, my dear Watson */
 body {
-	padding: 0 2em;
-	height: 100%;
-	background: #fafafa;
-	color: #393939;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 1.5em;
-	line-height: 1.75;
-	font-family: "Neuzeit S LT W01 Book", "Lucida Grande", Lucida, Arial, Helvetica, sans-serif;
+  padding: 0 2em;
+  height: 100%;
+  background: #fff;
+  color: #111;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 1.75;
+  font-family: "Untitled Sans", Helvetica Neue, Arial, sans-serif;
 }
 
 img,
 object,
 embed {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Structural for when youse gots to be accessible */
 .structural,
 .structural > *,
 .js .js-structural {
-	position: absolute;
-	left: -9999px;
+  position: absolute;
+  left: -9999px;
 }
 
 /* ============================== */
@@ -36,98 +38,107 @@ embed {
 
 a,
 a:visited {
-	border-bottom: 1px solid;
-	color: inherit;
-	text-decoration: none;
+  border-bottom: 1px solid;
+  color: inherit;
+  text-decoration: none;
 }
 a:hover,
 a:focus,
 a:active {
-	border-bottom: 0;
+  border-bottom: 0;
 }
 
 /* ============================== */
 /* ! Content        			  */
 /* ============================== */
 h1 {
-	font-weight: normal;
-	font-size: 0.916666em;
-	font-weight: 400;
+  font-size: 26px;
+  font-weight: 400;
 }
 
 p {
-	text-rendering: optimizeLegibility;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
 }
 
 .header,
 .primary-content {
-	text-align: center
+  text-align: center;
 }
 
 .header {
-	margin-top: 3.5em;
-	margin-bottom: 5.5em;
+  margin-top: 3.5em;
+  margin-bottom: 5.5em;
 }
 
 .primary-content {
-	margin: 0 auto 8.5em;
-    max-width: 30em;
+  margin: 0 auto 8.5em;
+  max-width: 36em;
 }
 
 .footer {
-	max-width: 30.6em;
-	margin: 0 auto;
+  max-width: 30.6em;
+  margin: 0 auto;
 }
 
 .footer ul {
-	list-style: none;
-	font-size: 16px;
+  list-style: none;
+  font-size: 16px;
 }
 
 .footer li {
-	float: left;
-	width: 33.3%;
-	text-align: center;
+  float: left;
+  width: 33.3%;
+  text-align: center;
 }
 
 .footer li:first-child {
-	float: left;
-	text-align: left;
+  float: left;
+  text-align: left;
 }
 
 .footer li:last-child {
-	float: right;
-	text-align: right;
+  float: right;
+  text-align: right;
 }
 
 @media only screen and (max-width: 920px) {
-	.primary-content {
-		margin-bottom: 58px;
-	}
+  .footer {
+    margin-bottom: 105px;
+  }
 
-	.footer {
-		margin-bottom: 105px;
-	}
-
-	.footer li,
-	.footer li:first-child,
-	.footer li:last-child {
-		display: block;
-		float: none;
-		margin-bottom: 12px;
-		width: 100%;
-		text-align: center;
-	}
+  .footer li,
+  .footer li:first-child,
+  .footer li:last-child {
+    display: block;
+    float: none;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 540px) {
-	.header {
-		margin-bottom: 58px;
-		font-size: 0.95em;
-	}
+  .primary-content {
+    margin-bottom: 58px;
+  }
 
-	body {
-		font-size: 1.3125em;
-		line-height: 1.5;
-	}
+  .header {
+    margin-bottom: 58px;
+    font-size: 0.95em;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  body {
+    font-size: 1.3125em;
+    line-height: 1.5;
+  }
 }
