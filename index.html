@@ -2,39 +2,185 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Mattias Hinderson — Digital Designer</title>
+    <title>Mattias Hinderson - Creative Technologist</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta
       name="description"
-      content="I am a digital designer serving in fields of front end development, art direction and human-computer interaction for the web."
+      content="I am Mattias Hinderson, a creative technologist serving in fields of front end development, art direction and human-computer interaction for the web."
     />
-    <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <style type="text/css">
+      @font-face {
+        font-family: "Untitled Sans";
+        src: url(/assets/fonts/UntitledSans-Regular.woff2) format("woff2"),
+          url(/assets/fonts/UntitledSans-Regular.woff) format("woff");
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      p + p {
+        margin-top: 2em;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #111;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        line-height: 1.75;
+        font-family: "Untitled Sans", Helvetica Neue, Arial, sans-serif;
+      }
+      .js .js-visuallyhidden,
+      .visuallyhidden,
+      .visuallyhidden > * {
+        position: absolute;
+        left: -9999px;
+      }
+      .visuallyhidden + * {
+        margin-top: 0;
+      }
+      a,
+      a:visited {
+        border-bottom: 1px solid;
+        color: inherit;
+        text-decoration: none;
+      }
+      a:active,
+      a:focus,
+      a:hover {
+        border-bottom: 0;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 26px;
+        line-height: 1.4;
+        letter-spacing: -0.3px;
+      }
+      .site-canvas {
+        display: grid;
+        grid-template-rows: 0.25fr 1fr 0.5fr;
+        padding-left: 2em;
+        padding-right: 2em;
+        min-height: 100%;
+        justify-content: center;
+      }
+      .primary-content,
+      .site-footer {
+        text-align: center;
+        max-width: 38em;
+      }
+      .primary-content {
+        grid-row: 2;
+        align-self: center;
+      }
+      .site-footer {
+        grid-row: 3;
+      }
+      p:not(.cv) + .cv {
+        margin-top: 2.6em;
+      }
+      .cv {
+        font-size: 20px;
+      }
+      .cv + .cv {
+        margin-top: 0.5em;
+      }
+      .site-footer {
+        display: grid;
+        align-items: center;
+        padding-top: 0;
+      }
+      .site-footer ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        font-size: 16px;
+      }
+      .site-footer li {
+        flex: 1;
+      }
+      .site-footer li + li {
+        margin-top: 0;
+      }
+      @media screen and (min-width: 920px) {
+        .site-footer li:first-child {
+          text-align: left;
+        }
+        .site-footer li:last-child {
+          text-align: right;
+        }
+      }
+      @media screen and (max-width: 920px) {
+        .site-footer ul {
+          display: block;
+          text-align: center;
+        }
+        .site-footer li + li {
+          margin-top: 12px;
+        }
+      }
+      @media screen and (max-width: 540px) {
+        .site-canvas {
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+        h1 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 20px;
+        }
+        .cv {
+          font-size: 17px;
+        }
+        body {
+          font-size: 1.3125em;
+          line-height: 1.5;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header class="header">
-      <h1>Mattias Hinderson</h1>
-    </header>
-    <main class="primary-content">
-      <p>
-        I am a digital designer serving in fields of front end development, art
-        direction and human-computer interaction for the web.
-      </p>
-      <p>
-        Currently Lead Developer at
-        <a href="http://whitespace.se">Whitespace</a> in Malmö, Sweden.
-      </p>
-    </main>
-    <footer class="footer">
-      <h2 class="structural">Contact me:</h2>
-      <ul itemscope itemtype="http://schema.org/Person">
-        <li class="email" itemprop="email">
-          <a href="mailto:mattias@hinderson.com">mattias@hinderson.com</a>
-        </li>
-        <li class="telephone" itemprop="telephone">+46 (0) 70 284 84 04</li>
-        <li class="twitter">
-          <a href="https://twitter.com/hinderson/">@hinderson</a>
-        </li>
-      </ul>
-    </footer>
+    <div class="site-canvas">
+      <main class="primary-content">
+        <h1 class="visuallyhidden">Personal website for Mattias Hinderson</h1>
+        <p>👋 Hello,</p>
+        <p>
+          I am Mattias Hinderson, a creative technologist serving in fields of
+          front end development, art direction and human-computer interaction
+          for the web.
+        </p>
+        <p class="cv">
+          Lead Developer at
+          <a href="http://whitespace.se">Whitespace</a>.
+        </p>
+        <p class="cv">
+          Previously at <a href="https://springsummer.dk">Spring/Summer</a>,
+          <a href="https://www.massive.se/">Ubisoft Massive</a>, FEW.
+        </p>
+      </main>
+      <footer class="site-footer">
+        <h2 class="visuallyhidden">Contact me:</h2>
+        <ul itemscope itemtype="http://schema.org/Person">
+          <li itemprop="email">
+            <a href="mailto:mattias@hinderson.com">mattias@hinderson.com</a>
+          </li>
+          <li itemprop="telephone">+46 (0) 70 284 84 04</li>
+          <li>
+            <a href="https://twitter.com/hinderson/">@hinderson</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>
