@@ -132,8 +132,8 @@
       }
       @media screen and (max-width: 540px) {
         .site-canvas {
-          padding-left: 0.5em;
-          padding-right: 0.5em;
+          grid-template-rows: 1fr 0.5fr;
+          padding: 2em 0.5em;
         }
         p {
           font-size: 18px;
@@ -141,6 +141,12 @@
         .cv,
         .site-footer ul {
           font-size: 14px;
+        }
+        .primary-content {
+          grid-row: 1;
+        }
+        .site-footer {
+          grid-row: 2;
         }
       }
     </style>
